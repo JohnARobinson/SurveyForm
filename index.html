@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey_Questionnaire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <script src="main.js">
+    </script>
+    <div>
+        <h1>Survey Questionnaire</h1>
+    </div>
+    <div>
+        <form> 
+            <p>Please enter your name and email address.</p>
+            <input type="text" placeholder="First Name"/>
+            <input type="text" placeholder="Last Name"/>
+            <input type="email" placeholder="Email Address"/>
+            <input type="text" placeholder="Address"/>
+            <input type="number" name="age" min="13" max="120" placeholder="Age" />
+
+            <h4>Question 1</h4>
+            <p>How much do you enjoy programming?</p>
+            <label><input type="radio"/>I really enjoy programming, i do it every day!<input type="radio"/>I enjoy programming, but I dont do it every day.<input type="radio"/>I dont really like programming.<input type="radio">Whats programming???</label>
+            <h4>Question 2</h4>
+            <p>How many hours a day do you work on coding projects?</p>
+            <label><input type="radio"/>8 or more<input type="radio"/>7 to 4<input type="radio"/>4 to 2<input type="radio"/>lesss than 2</label>
+            <h4>Question 3</h4>
+            <p>Do you use GitHub or some other version control service?</p>
+            <label><input type="radio"/>Yes<input type="radio"/>No</label>
+            <h4>Question 4</h4>
+            <p>Of the ones listed below which languages are you familar with?</p>
+            <div class="langlist">
+              <label><input type="checkbox"/>C<input type="checkbox" class="inline"/>C#<input type="checkbox"/>C++<input type="checkbox"/>Java</label><input type="checkbox"/>Python</label><input type="checkbox"/>Javascript<input type="checkbox"/>HTML<input type="checkbox"/>CSS<input type="checkbox"/>SQL</label>
+            </div>
+            <h4>Question 5</h4>
+            <label>How many years of experience do you have?<input type="number" name="yrexp" min="0"/></label>
+            <h4>Question 6</h4>
+            <label for="exp">What is your job title?
+              <select id="exp" name="exp">
+                <option value="">(select one)</option>
+                <option value="1">intern/student</option>
+                <option value="2">software developer</option>
+                <option value="3">web developer</option>
+                <option value="4">software engineer</option>
+                <option value="4">computer engineer</option>
+              </select>
+            </label>
+            <h4>Question 7</h4>
+            <p>Do you have at least a bachalors degree in a relevant field?</p>
+            <label><input type="radio"/>Yes<input type="radio"/>No</label>
+            <h4>Question 8</h4>
+            <p>Provide any additional information you feel might be relevant.</p>
+            <label for="extra">
+              <textarea id="extra" name="extra" rows="3" cols="30"></textarea>
+            </label>
+            
+
+        </form>
+    </div>
+
+  </body>
+</html>
